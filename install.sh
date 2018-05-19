@@ -18,7 +18,11 @@ sudo apt-get install pv
 
 clear
 
-sudo curl -s https://raw.githubusercontent.com/alectramell/toigen/master/render.sh -P /opt/toigen/toigen.sh
+curl -s https://raw.githubusercontent.com/alectramell/toigen/master/render.sh > /home/$(whoami)/.toigen.sh
+
+clear
+
+sudo mv /home/$(whoami)/.toigen.sh /opt/toigen/toigen.sh
 
 clear
 
