@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/alectramell/toigen/master/$1.toi -P /home
 
 clear
 
-gvfs-set-attribute -t string /home/$(whoami)/toigen/*.toi metadata::custom-icon file:///opt/toigen/icons/toi.png
+gvfs-set-attribute -t string /home/$(whoami)/toigen/$1.toi metadata::custom-icon file:///opt/toigen/icons/toi.png
 
 clear
 
