@@ -2,12 +2,24 @@
 
 clear
 
-gvfs-set-attribute -t string /home/$(whoami)/Desktop/*.toi metadata::custom-icon file:///opt/toigen/icons/toi.png
+cat $(pwd)/$1 | xxd -p > $(pwd)/$1.toi
 
 clear
 
-chmod +x /home/$(whoami)/Desktop/*.toi
+gvfs-set-attribute -t string $(pwd)/$1.toi metadata::custom-icon file:///opt/toigen/icons/toi.png
 
 clear
 
-echo "DONE! TOIGEN FILES HAVE BEEN RENDERED ON ~/Desktop" 
+chmod +x $(pwd)/$1.toi
+
+clear
+
+sleep 0.5
+
+clear
+
+rm cat $(pwd)/$1
+
+clear
+
+echo "DONE! YOUR TOI FILE HAS BEEN RENDERED!" 
