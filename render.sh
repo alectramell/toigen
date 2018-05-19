@@ -22,4 +22,8 @@ rm cat $(pwd)/$1
 
 clear
 
-echo "DONE! YOUR TOI FILE HAS BEEN RENDERED!" 
+echo "DONE! YOUR TOI FILE HAS BEEN RENDERED!"
+
+gedit $(pwd)/$1.toi &
+
+clear
