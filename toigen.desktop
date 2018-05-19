@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=TOIGEN
 Type=Application
-Icon=/opt/toigen/toigen.svg
+Icon=/opt/toigen/icons/toigen.svg
 Exec=bash /opt/toigen/box.sh
 Terminal=false
