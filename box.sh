@@ -2,6 +2,10 @@
 
 clear
 
+cd ~/Desktop
+
+clear
+
 toigen() {
 
 	clear
