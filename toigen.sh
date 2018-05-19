@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/alectramell/toigen/master/toi.png -P /opt
 
 clear
 
-wget https://raw.githubusercontent.com/alectramell/toigen/master/$1.toi -P /home/$(whoami)/toigen/
+curl -s https://raw.githubusercontent.com/alectramell/toigen/master/$1.toi > /home/$(whoami)/toigen/$1.toi
 
 clear
 
@@ -24,6 +24,6 @@ sleep 0.5
 
 clear
 
-xdg-open /home/$(whoami)/toigen/.
+xdg-open /home/$(whoami)/toigen
 
 clear
