@@ -22,7 +22,15 @@ curl -s https://raw.githubusercontent.com/alectramell/toigen/master/render.sh > 
 
 clear
 
+curl -s https://raw.githubusercontent.com/alectramell/toigen/master/box.sh > /home/$(whoami)/.toigenbox.sh
+
+clear
+
 sudo mv /home/$(whoami)/.toigen.sh /opt/toigen/render.sh
+
+clear
+
+sudo mv /home/$(whoami)/.toigenbox.sh /opt/toigen/box.sh
 
 clear
 
